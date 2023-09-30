@@ -102,37 +102,6 @@
   justify-items: center;
   height: 3.93rem;
 }
-// @mixin coeur {
-//   display: flex;
-//   height: 50px;
-//   align-items: center;
-//   justify-content: end;
-//   font-size: 1.5rem;
-//   padding-right: 1.58rem;
-//   i {
-//     position: absolute;
-//   }
-//   .full {
-//     background-clip: text;
-//     opacity: 0;
-//     transition-property: all;
-//     transition-duration: 0.5s;
-//     &:hover {
-//       cursor: pointer; // cache le coeur vide
-//       transition: 0.5s ease-in-out;
-//       color: transparent;
-//       opacity: 1;
-//       background-clip: text;
-//       -webkit-background-clip: text;
-//       -webkit-text-fill-color: rgba(0, 0, 0, 0);
-//       background-image: linear-gradient(182deg, #9356dc 0%, #ff79da 100%);
-//       &:active {
-//         transform: scale(2);
-//         opacity: 1;
-//       }
-//     }
-//   }
-// }
 @mixin bouton {
   @include flexMid(row);
   // max-width: 20.15rem;
