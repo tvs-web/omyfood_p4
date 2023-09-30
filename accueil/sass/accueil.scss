@@ -6,9 +6,9 @@
   margin: 0;
 }
 
-// .loader {
-//   @include loader;
-// }
+.loader {
+  @include loader;
+}
 body {
   margin: 0;
   @include police(roboto); // font-family: roboto//
