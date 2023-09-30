@@ -1,0 +1,201 @@
+@use "../../parcels/variables";
+// @import "../../parcels/normalize";
+@import "../../parcels/mixins";
+
+* {
+  margin: 0;
+}
+.loader {
+  @include loader;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  @include police(roboto); // font-family: roboto//
+  .entete {
+    @include entete;
+  }
+  main {
+    width: 100%;
+    box-sizing: border-box;
+    .banniere {
+      width: 100%;
+      margin-bottom: -50px;
+      max-height: 24rem;
+      object-fit: cover;
+    }
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.125rem;
+    margin-top: 2.5rem;
+  }
+}
+.enseigne {
+  @include enseigne;
+}
+.contain {
+  @include contain;
+}
+.menu {
+  @include menu;
+}
+.entree {
+  animation-delay: 5s;
+  @include entree;
+  // &:active {
+  //   .detail p {
+  //     width: calc(100% - 40px);
+  //   }
+  // }
+}
+.commande {
+  @include flexMid(row);
+}
+footer {
+  @include footer;
+}
+.map {
+  @include map;
+}
+@media #{variables.$small-down} {
+  //inf à 375px//
+  .entree {
+    @include entree;
+    #b1:active .detail p {
+      @include defil_text;
+    }
+    #b2:active .detail p {
+      @include defil_text;
+    }
+    #b3:active .detail p {
+      @include defil_text;
+    }
+    #b4:active .detail p {
+      @include defil_text;
+    }
+    #b5:active .detail p {
+      @include defil_text;
+    }
+    #b6:active .detail p {
+      @include defil_text;
+    }
+    #b7:active .detail p {
+      @include defil_text;
+    }
+    #b8:active .detail p {
+      @include defil_text;
+    }
+    #b9:active .detail p {
+      @include defil_text;
+    }
+  }
+}
+
+//sup à 375 et inf à400//
+@media #{variables.$medium-down} {
+  .restaurants {
+    .carte {
+      flex-basis: 100%;
+    }
+  }
+}
+
+//sup à 400 et inf a 768//
+@media #{variables.$tab-down} {
+  @include nav;
+  .titre {
+    @include nav_titre(center);
+  }
+  .map {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    i {
+      text-align: center;
+    }
+  }
+  .restaurants {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3.12rem;
+    .carte {
+      flex-basis: 100%;
+    }
+  }
+}
+//sup à 768 et inf à 1024//
+@media #{variables.$dekstop-down} {
+  @include nav;
+  .titre {
+    @include nav_titre(center);
+  }
+  .restaurants {
+    flex-direction: row;
+    flex-wrap: wrap;
+    .carte {
+      flex-basis: 38%;
+      // min-width: 305px;
+    }
+  }
+
+  .map {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    i {
+      text-align: center;
+    }
+  }
+}
+//sup à 1024//
+@media #{variables.$dekstop-up} {
+  @include nav;
+  .titre {
+    @include nav_titre(center);
+  }
+  .restaurants {
+    flex-direction: row;
+    flex-wrap: wrap;
+    .carte {
+      flex-basis: 38%;
+      // min-width: 305px;
+    }
+  }
+  .map {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    i {
+      width: 138px;
+      order: 5;
+    }
+  }
+}
+@keyframes cascade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.bouton_menu:nth-child(2) {
+  animation-delay: 3.4s;
+}
+
+.bouton_menu:nth-child(3) {
+  animation-delay: 3.8s;
+}
+
+.bouton_menu:nth-child(4) {
+  animation-delay: 4.2s;
+}
