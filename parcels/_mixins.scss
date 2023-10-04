@@ -23,8 +23,6 @@
       ),
       linear-gradient(182deg, #9356dc 0%, #ff79da 100%);
     box-shadow: 3px 4px 15px 0px rgba(238, 3, 113, 0.2);
-    // border-top: solid 5px #9356dc;
-    // border-bottom: solid 5px#9356dc;
     box-shadow: 0px 4px 15px 0px rgba(96, 5, 92, 0.9);
     border-radius: 49%;
     animation: spiner 3s infinite ease-in-out alternate;
@@ -40,12 +38,9 @@
     z-index: 3;
     p {
       display: inline-block;
-      // position: absolute;
       animation-duration: 1s;
       animation: letter 3s infinite ease-in-out alternate;
       animation-fill-mode: forwards;
-      // transform-origin: right center;
-      // margin-right: 40px;
     }
   }
   @keyframes load {
@@ -69,17 +64,11 @@
     @keyframes letter {
       0% {
         transform: scale(0.1);
-        // opacity: 0;
         transform: rotate(0deg);
       }
       100% {
         transform: rotate(360deg) scale(2);
-        // opacity: 1;
       }
-      // 100% {
-      //   transform: rotate(-360deg) scale(0.1);
-      //   // opacity: 0;
-      // }
     }
   }
 }
@@ -92,8 +81,6 @@
 }
 @mixin police($family) {
   font-family: $family;
-  // font-size: $size;
-  // font-weight: $weight;
 }
 @mixin restaurant($a, $b, $c) {
   display: grid;
@@ -104,15 +91,12 @@
 }
 @mixin bouton {
   @include flexMid(row);
-  // max-width: 20.15rem;
   align-items: center;
   width: 100%;
   height: 4.5rem;
-  // flex-shrink: 0;
   border-radius: 1.25rem;
   background: var(--background, #f6f6f6);
   gap: 1.67rem;
-  /* Shadow/Instructions */
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.6);
   transition-duration: 0.5s;
   box-sizing: border-box;
@@ -142,7 +126,6 @@
   }
 
   .icone {
-    // display: none;
     border: solid 1px;
     margin-left: 1.065rem;
     display: block;
@@ -170,7 +153,6 @@
     linear-gradient(175deg, #9356dc 0%, #ff79da 100%)
   );
   margin-top: 1.7rem;
-  /* Shadow/Button */
   box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.6);
   color: var(--white, #fff);
   text-align: center;
@@ -209,8 +191,6 @@
   box-shadow: 0px 5px 3px -5px inset grey;
   .localisation__btn {
     color: var(--grey, #353535);
-
-    /* Button */
     font-size: 1rem;
     margin-left: 1.06rem;
     border: none;
@@ -281,11 +261,9 @@
       @include flexMid(row);
       width: 100%;
       height: 4.52369rem;
-      // flex-shrink: 0;
       border-radius: 1.25rem;
       background: var(--background, #f6f6f6);
       gap: 1.67rem;
-      /* Shadow/Instructions */
       box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.6);
       transition-duration: 0.5s;
 
@@ -324,7 +302,6 @@
   display: flex;
   flex-direction: column;
   width: auto;
-  // margin-top: 1.5rem;
   border-radius: 15px;
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -365,7 +342,6 @@
   height: 1.8125rem;
   border-radius: 0.125rem;
   background: var(--green, #99e2d0);
-  /* Shadow/Badge */
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   position: absolute;
   right: 0.75rem;
@@ -459,7 +435,6 @@
   justify-content: end;
   font-size: 1.5rem;
   margin-left: 2rem;
-  // padding-right: 1.58rem;
   i {
     position: absolute;
   }
@@ -469,7 +444,7 @@
     transition-property: all;
     transition-duration: 0.5s;
     &:hover {
-      cursor: pointer; // cache le coeur vide
+      cursor: pointer;
       transition: 0.5s ease-in-out;
       color: transparent;
       opacity: 1;
@@ -544,7 +519,6 @@
     margin-bottom: 0.75rem;
     justify-content: space-between;
     border-block-color: transparent;
-    // transform: scaleY(-20px);
     animation: cascade 1s 3s ease-in-out both;
     max-width: none;
     box-sizing: content-box;
@@ -573,15 +547,11 @@
         top: 0;
         right: 0;
         border-radius: 0 1.25rem 1.25rem 0;
-        // transition-property: all;
-        // transition-duration: 5s;
         .fa-circle-check {
-          // color: white;
           opacity: 0;
           transform: scale(1.5);
-          // scale: 1.5;
           background-clip: text;
-          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre du texte (ombrage de lumière) */
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
           -webkit-background-clip: text;
           -webkit-text-fill-color: white;
@@ -604,9 +574,7 @@
     &:active {
       .slide {
         cursor: pointer;
-        // -webkit-animation: slider 8s ease-in-out both;
         animation: slider 0.2s ease-in-out both;
-        // transition-duration: 8s;
       }
     }
     &:active {
@@ -618,7 +586,6 @@
     &:active {
       .prix {
         animation: prixer 0.5s cubic-bezier(0.25, 0.1, 0.48, 1) forwards;
-        // transition-duration: 2s;
       }
     }
     &:active p {

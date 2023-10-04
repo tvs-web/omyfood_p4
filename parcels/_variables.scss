@@ -17,9 +17,3 @@ $medium-down: "only screen and (min-width:#{$small}) and (max-width: #{$medium})
 $tab-down: "only screen and (min-width:#{$medium}) and (max-width:#{$tab})"; //sup à 400 et inf a 768//
 $dekstop-down: "only screen and (min-width: #{$tab}) and (max-width:#{$dekstop})"; //sup à 768 et inf à 1024//
 $dekstop-up: "only screen and (min-width: #{$dekstop})"; //sup à 1024//
-
-// $small-down: "only screen and (max-width: #{$small})"; //inf à 375px//
-// $medium-down: "only screen and (min-width:#{$small}) and (max-width: #{$medium})"; //sup à 375 et inf à400//
-// $tab-down: "only screen and (min-width:#{$medium}) and (max-width:#{$tab})"; //sup à 400 et inf a 768//
-// $dekstop-down: "only screen and (min-width: #{$tab}) and (max-width:#{$dekstop})"; //sup à 768 et inf à 1024//
-// $dekstop-up: "only screen and (min-width: #{$dekstop})"; //supà 1024//
