@@ -594,6 +594,11 @@
   }
 }
 @mixin defil_text {
+  width: calc(100% - 40px);
+  transition-duration: 0.5s;
+  // transition-delay: 0.2s;
+}
+@mixin defil1_text {
   width: calc(100% - 60px);
   transition-duration: 0.5s;
   transition-delay: 0.2s;

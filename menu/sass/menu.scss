@@ -64,7 +64,94 @@ footer {
 @media #{variables.$small-down} {
   //inf à 375px//
   .entree {
-    @include entree;
+    // @include entree;
+    #b1:active .detail p {
+      @include defil1_text;
+    }
+    #b2:active .detail p {
+      @include defil1_text;
+    }
+    #b3:active .detail p {
+      @include defil1_text;
+    }
+    #b4:active .detail p {
+      @include defil1_text;
+    }
+    #b5:active .detail p {
+      @include defil1_text;
+    }
+    #b6:active .detail p {
+      @include defil1_text;
+    }
+    #b7:active .detail p {
+      @include defil1_text;
+    }
+    #b8:active .detail p {
+      @include defil1_text;
+    }
+    #b9:active .detail p {
+      @include defil1_text;
+    }
+    #b10:active .detail p {
+      @include defil1_text;
+    }
+    #b11:active .detail p {
+      @include defil1_text;
+    }
+    #b12:active .detail p {
+      @include defil1_text;
+    }
+    #b13:active .detail p {
+      @include defil1_text;
+    }
+    #b14:active .detail p {
+      @include defil1_text;
+    }
+    #b15:active .detail p {
+      @include defil1_text;
+    }
+    #b16:active .detail p {
+      @include defil1_text;
+    }
+    #b17:active .detail p {
+      @include defil1_text;
+    }
+    // #b2:active .detail p {
+    //   @include defil1_text;
+    // }
+    // #b3:active .detail p {
+    //   @include defil1_text;
+    // }
+    // #b4:active .detail p {
+    //   @include defil1_text;
+    // }
+    // #b5:active .detail p {
+    //   @include defil1_text;
+    // }
+    // #b6:active .detail p {
+    //   @include defil1_text;
+    // }
+    // #b7:active .detail p {
+    //   @include defil1_text;
+    // }
+    // #b8:active .detail p {
+    //   @include defil1_text;
+    // }
+    // #b9:active .detail p {
+    //   @include defil1_text;
+    // }
+  }
+}
+
+//sup à 375 et inf à400//
+@media #{variables.$medium-down} {
+  .restaurants {
+    .carte {
+      flex-basis: 100%;
+    }
+  }
+  .entree {
+    // @include entree;
     #b1:active .detail p {
       @include defil_text;
     }
@@ -91,15 +178,6 @@ footer {
     }
     #b9:active .detail p {
       @include defil_text;
-    }
-  }
-}
-
-//sup à 375 et inf à400//
-@media #{variables.$medium-down} {
-  .restaurants {
-    .carte {
-      flex-basis: 100%;
     }
   }
 }

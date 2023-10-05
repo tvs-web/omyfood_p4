@@ -794,12 +794,12 @@ footer a {
     transform: scale(0.8);
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 374px) {
   .navigation .navigation__page .navigation__bouton {
     gap: 0.8rem;
   }
 }
-@media only screen and (min-width:375px) and (max-width: 400px) {
+@media only screen and (min-width:374px) and (max-width: 400px) {
   .restaurants .carte {
     flex-basis: 100%;
   }
