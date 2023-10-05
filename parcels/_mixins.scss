@@ -249,6 +249,7 @@
     }
     .navigation__bouton {
       max-width: 20.15rem;
+      cursor: pointer;
 
       .navigation__bouton__txt {
         text-decoration: none;
@@ -522,6 +523,8 @@
     animation: cascade 1s 3s ease-in-out both;
     max-width: none;
     box-sizing: content-box;
+    cursor: pointer;
+
     .detail {
       padding-left: 1rem;
       display: flex;
