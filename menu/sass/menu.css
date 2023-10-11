@@ -264,7 +264,6 @@ body h2 {
 }
 
 .entree {
-  animation-delay: 5s;
   display: flex;
   flex-direction: column;
   justify-content: center;

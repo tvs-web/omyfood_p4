@@ -44,13 +44,7 @@ body {
   @include menu;
 }
 .entree {
-  animation-delay: 5s;
   @include entree;
-  // &:active {
-  //   .detail p {
-  //     width: calc(100% - 40px);
-  //   }
-  // }
 }
 .commande {
   @include flexMid(row);
