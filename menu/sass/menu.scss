@@ -61,88 +61,173 @@ footer {
 .map {
   @include map;
 }
-@media #{variables.$small-down} {
-  //inf à 375px//
+
+@media #{variables.$smaller-down} {
   .entree {
-    // @include entree;
-    #b1:active .detail p {
-      @include defil1_text;
-    }
-    #b2:active .detail p {
-      @include defil1_text;
+    #b2:active {
+      .detail p {
+        @include defil3_text;
+      }
+      .detail h3 {
+        @include defil1_text;
+      }
     }
     #b3:active .detail p {
-      @include defil1_text;
+      @include defil3_text;
     }
-    #b4:active .detail p {
-      @include defil1_text;
+    #b4:active {
+      .detail p {
+        @include defil3_text;
+      }
+      .detail h3 {
+        @include defil1_text;
+      }
     }
-    #b5:active .detail p {
-      @include defil1_text;
+    #b5:active {
+      .detail p {
+        @include defil3_text;
+      }
+      .detail h3 {
+        @include defil1_text;
+      }
     }
-    #b6:active .detail p {
-      @include defil1_text;
-    }
-    #b7:active .detail p {
-      @include defil1_text;
-    }
-    #b8:active .detail p {
-      @include defil1_text;
+    #b8:active {
+      .detail p {
+        @include defil3_text;
+      }
+      .detail h3 {
+        @include defil1_text;
+      }
     }
     #b9:active .detail p {
-      @include defil1_text;
+      @include defil3_text;
     }
     #b10:active .detail p {
-      @include defil1_text;
+      @include defil3_text;
     }
     #b11:active .detail p {
-      @include defil1_text;
+      @include defil3_text;
     }
-    #b12:active .detail p {
-      @include defil1_text;
+    #b12:active {
+      .detail p {
+        @include defil3_text;
+      }
+      .detail h3 {
+        @include defil1_text;
+      }
     }
-    #b13:active .detail p {
-      @include defil1_text;
+    #b13:active {
+      .detail p {
+        @include defil3_text;
+      }
+      .detail h3 {
+        @include defil1_text;
+      }
     }
-    #b14:active .detail p {
-      @include defil1_text;
+    #b14:active {
+      .detail p {
+        @include defil3_text;
+      }
+      .detail h3 {
+        @include defil1_text;
+      }
     }
-    #b15:active .detail p {
-      @include defil1_text;
+    #b16:active {
+      .detail p {
+        @include defil3_text;
+      }
+      .detail h3 {
+        @include defil1_text;
+      }
     }
-    #b16:active .detail p {
-      @include defil1_text;
+    #b17:active {
+      .detail p {
+        @include defil3_text;
+      }
+      .detail h3 {
+        @include defil1_text;
+      }
     }
-    #b17:active .detail p {
-      @include defil1_text;
+    #b18:active {
+      .detail p {
+        @include defil3_text;
+      }
+      .detail h3 {
+        @include defil1_text;
+      }
     }
-    // #b2:active .detail p {
-    //   @include defil1_text;
-    // }
-    // #b3:active .detail p {
-    //   @include defil1_text;
-    // }
-    // #b4:active .detail p {
-    //   @include defil1_text;
-    // }
-    // #b5:active .detail p {
-    //   @include defil1_text;
-    // }
-    // #b6:active .detail p {
-    //   @include defil1_text;
-    // }
-    // #b7:active .detail p {
-    //   @include defil1_text;
-    // }
-    // #b8:active .detail p {
-    //   @include defil1_text;
-    // }
-    // #b9:active .detail p {
-    //   @include defil1_text;
-    // }
+    #b19:active {
+      .detail h3 {
+        @include defil1_text;
+      }
+    }
+    #b20:active {
+      .detail h3 {
+        @include defil1_text;
+      }
+    }
+    #b21:active {
+      .detail p {
+        @include defil3_text;
+      }
+      .detail h3 {
+        @include defil1_text;
+      }
+    }
+    #b23:active {
+      .detail p {
+        @include defil3_text;
+      }
+      .detail h3 {
+        @include defil1_text;
+      }
+    }
+    #b24:active {
+      .detail p {
+        @include defil3_text;
+      }
+    }
+    #b25:active {
+      .detail p {
+        @include defil3_text;
+      }
+      .detail h3 {
+        @include defil1_text;
+      }
+    }
+    #b26:active {
+      .detail h3 {
+        @include defil1_text;
+      }
+    }
+    #b28:active {
+      .detail p {
+        @include defil3_text;
+      }
+      .detail h3 {
+        @include defil1_text;
+      }
+    }
+    #b30:active {
+      .detail p {
+        @include defil3_text;
+      }
+      .detail h3 {
+        @include defil1_text;
+      }
+    }
+    #b32:active {
+      .detail h3 {
+        @include defil1_text;
+      }
+    }
+    #b33:active {
+      .detail p {
+        @include defil3_text;
+      }
+    }
   }
 }
-
 //sup à 375 et inf à400//
 @media #{variables.$medium-down} {
   .restaurants {
@@ -151,33 +236,29 @@ footer {
     }
   }
   .entree {
-    // @include entree;
-    #b1:active .detail p {
-      @include defil_text;
-    }
-    #b2:active .detail p {
-      @include defil_text;
-    }
     #b3:active .detail p {
-      @include defil_text;
+      @include defil2_text;
     }
     #b4:active .detail p {
-      @include defil_text;
+      @include defil1_text;
     }
     #b5:active .detail p {
-      @include defil_text;
-    }
-    #b6:active .detail p {
-      @include defil_text;
-    }
-    #b7:active .detail p {
-      @include defil_text;
-    }
-    #b8:active .detail p {
-      @include defil_text;
+      @include defil2_text;
     }
     #b9:active .detail p {
-      @include defil_text;
+      @include defil2_text;
+    }
+    #b10:active .detail p {
+      @include defil1_text;
+    }
+    #b17:active .detail p {
+      @include defil1_text;
+    }
+    #b23:active .detail p {
+      @include defil2_text;
+    }
+    #b32:active h3 {
+      @include defil2_text;
     }
   }
 }
