@@ -190,25 +190,16 @@ body h2 {
 .enseigne .coeur i {
   position: absolute;
 }
-.enseigne .coeur .full {
-  -webkit-background-clip: text;
-          background-clip: text;
-  opacity: 0;
-  transition-property: all;
-  transition-duration: 0.5s;
-}
-.enseigne .coeur .full:hover {
-  cursor: pointer;
-  transition: 0.5s ease-in-out;
-  color: transparent;
-  opacity: 1;
-  background-clip: text;
+.enseigne .coeur .full::before {
+  content: "\f004";
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  background-clip: text;
   background-image: linear-gradient(182deg, #9356dc 0%, #ff79da 100%);
+  opacity: 0;
+  transition: opacity 1s;
 }
-.enseigne .coeur .full:hover:active {
-  transform: scale(1.8);
+.enseigne .coeur .full:hover::before {
   opacity: 1;
 }
 
@@ -369,18 +360,18 @@ body h2 {
   margin-top: 10px;
   font-weight: bold;
 }
-.entree .bouton_menu:active .slide {
+.entree .bouton_menu:hover .slide {
   cursor: pointer;
-  animation: slider 0.2s ease-in-out both;
+  animation: slider 0.4s ease-in-out both;
 }
-.entree .bouton_menu:active .fa-circle-check {
+.entree .bouton_menu:hover .fa-circle-check {
   animation: iconer 0.2s ease-in-out both;
   transition-duration: 0.2s;
 }
-.entree .bouton_menu:active .prix {
+.entree .bouton_menu:hover .prix {
   animation: prixer 0.5s cubic-bezier(0.25, 0.1, 0.48, 1) forwards;
 }
-.entree .bouton_menu:active p {
+.entree .bouton_menu:hover p {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
@@ -440,183 +431,183 @@ footer a {
 }
 
 @media only screen and (max-width: 374px) {
-  .entree #b2:active .detail p {
+  .entree #b2:hover .detail p {
     width: calc(100% - 60px);
     transition-duration: 0.5s;
     transition-delay: 0.2s;
   }
-  .entree #b2:active .detail h3 {
+  .entree #b2:hover .detail h3 {
     width: calc(100% - 30px);
     transition-duration: 0.5s;
   }
-  .entree #b3:active .detail p {
+  .entree #b3:hover .detail p {
     width: calc(100% - 60px);
     transition-duration: 0.5s;
     transition-delay: 0.2s;
   }
-  .entree #b4:active .detail p {
+  .entree #b4:hover .detail p {
     width: calc(100% - 60px);
     transition-duration: 0.5s;
     transition-delay: 0.2s;
   }
-  .entree #b4:active .detail h3 {
+  .entree #b4:hover .detail h3 {
     width: calc(100% - 30px);
     transition-duration: 0.5s;
   }
-  .entree #b5:active .detail p {
+  .entree #b5:hover .detail p {
     width: calc(100% - 60px);
     transition-duration: 0.5s;
     transition-delay: 0.2s;
   }
-  .entree #b5:active .detail h3 {
+  .entree #b5:hover .detail h3 {
     width: calc(100% - 30px);
     transition-duration: 0.5s;
   }
-  .entree #b8:active .detail p {
+  .entree #b8:hover .detail p {
     width: calc(100% - 60px);
     transition-duration: 0.5s;
     transition-delay: 0.2s;
   }
-  .entree #b8:active .detail h3 {
+  .entree #b8:hover .detail h3 {
     width: calc(100% - 30px);
     transition-duration: 0.5s;
   }
-  .entree #b9:active .detail p {
+  .entree #b9:hover .detail p {
     width: calc(100% - 60px);
     transition-duration: 0.5s;
     transition-delay: 0.2s;
   }
-  .entree #b10:active .detail p {
+  .entree #b10:hover .detail p {
     width: calc(100% - 60px);
     transition-duration: 0.5s;
     transition-delay: 0.2s;
   }
-  .entree #b11:active .detail p {
+  .entree #b11:hover .detail p {
     width: calc(100% - 60px);
     transition-duration: 0.5s;
     transition-delay: 0.2s;
   }
-  .entree #b12:active .detail p {
+  .entree #b12:hover .detail p {
     width: calc(100% - 60px);
     transition-duration: 0.5s;
     transition-delay: 0.2s;
   }
-  .entree #b12:active .detail h3 {
+  .entree #b12:hover .detail h3 {
     width: calc(100% - 30px);
     transition-duration: 0.5s;
   }
-  .entree #b13:active .detail p {
+  .entree #b13:hover .detail p {
     width: calc(100% - 60px);
     transition-duration: 0.5s;
     transition-delay: 0.2s;
   }
-  .entree #b13:active .detail h3 {
+  .entree #b13:hover .detail h3 {
     width: calc(100% - 30px);
     transition-duration: 0.5s;
   }
-  .entree #b14:active .detail p {
+  .entree #b14:hover .detail p {
     width: calc(100% - 60px);
     transition-duration: 0.5s;
     transition-delay: 0.2s;
   }
-  .entree #b14:active .detail h3 {
+  .entree #b14:hover .detail h3 {
     width: calc(100% - 30px);
     transition-duration: 0.5s;
   }
-  .entree #b16:active .detail p {
+  .entree #b16:hover .detail p {
     width: calc(100% - 60px);
     transition-duration: 0.5s;
     transition-delay: 0.2s;
   }
-  .entree #b16:active .detail h3 {
+  .entree #b16:hover .detail h3 {
     width: calc(100% - 30px);
     transition-duration: 0.5s;
   }
-  .entree #b17:active .detail p {
+  .entree #b17:hover .detail p {
     width: calc(100% - 60px);
     transition-duration: 0.5s;
     transition-delay: 0.2s;
   }
-  .entree #b17:active .detail h3 {
+  .entree #b17:hover .detail h3 {
     width: calc(100% - 30px);
     transition-duration: 0.5s;
   }
-  .entree #b18:active .detail p {
+  .entree #b18:hover .detail p {
     width: calc(100% - 60px);
     transition-duration: 0.5s;
     transition-delay: 0.2s;
   }
-  .entree #b18:active .detail h3 {
+  .entree #b18:hover .detail h3 {
     width: calc(100% - 30px);
     transition-duration: 0.5s;
   }
-  .entree #b19:active .detail h3 {
+  .entree #b19:hover .detail h3 {
     width: calc(100% - 30px);
     transition-duration: 0.5s;
   }
-  .entree #b20:active .detail h3 {
+  .entree #b20:hover .detail h3 {
     width: calc(100% - 30px);
     transition-duration: 0.5s;
   }
-  .entree #b21:active .detail p {
+  .entree #b21:hover .detail p {
     width: calc(100% - 60px);
     transition-duration: 0.5s;
     transition-delay: 0.2s;
   }
-  .entree #b21:active .detail h3 {
+  .entree #b21:hover .detail h3 {
     width: calc(100% - 30px);
     transition-duration: 0.5s;
   }
-  .entree #b23:active .detail p {
+  .entree #b23:hover .detail p {
     width: calc(100% - 60px);
     transition-duration: 0.5s;
     transition-delay: 0.2s;
   }
-  .entree #b23:active .detail h3 {
+  .entree #b23:hover .detail h3 {
     width: calc(100% - 30px);
     transition-duration: 0.5s;
   }
-  .entree #b24:active .detail p {
+  .entree #b24:hover .detail p {
     width: calc(100% - 60px);
     transition-duration: 0.5s;
     transition-delay: 0.2s;
   }
-  .entree #b25:active .detail p {
+  .entree #b25:hover .detail p {
     width: calc(100% - 60px);
     transition-duration: 0.5s;
     transition-delay: 0.2s;
   }
-  .entree #b25:active .detail h3 {
+  .entree #b25:hover .detail h3 {
     width: calc(100% - 30px);
     transition-duration: 0.5s;
   }
-  .entree #b26:active .detail h3 {
+  .entree #b26:hover .detail h3 {
     width: calc(100% - 30px);
     transition-duration: 0.5s;
   }
-  .entree #b28:active .detail p {
+  .entree #b28:hover .detail p {
     width: calc(100% - 60px);
     transition-duration: 0.5s;
     transition-delay: 0.2s;
   }
-  .entree #b28:active .detail h3 {
+  .entree #b28:hover .detail h3 {
     width: calc(100% - 30px);
     transition-duration: 0.5s;
   }
-  .entree #b30:active .detail p {
+  .entree #b30:hover .detail p {
     width: calc(100% - 60px);
     transition-duration: 0.5s;
     transition-delay: 0.2s;
   }
-  .entree #b30:active .detail h3 {
+  .entree #b30:hover .detail h3 {
     width: calc(100% - 30px);
     transition-duration: 0.5s;
   }
-  .entree #b32:active .detail h3 {
+  .entree #b32:hover .detail h3 {
     width: calc(100% - 30px);
     transition-duration: 0.5s;
   }
-  .entree #b33:active .detail p {
+  .entree #b33:hover .detail p {
     width: calc(100% - 60px);
     transition-duration: 0.5s;
     transition-delay: 0.2s;
@@ -626,35 +617,35 @@ footer a {
   .restaurants .carte {
     flex-basis: 100%;
   }
-  .entree #b3:active .detail p {
+  .entree #b3:hover .detail p {
     width: calc(100% - 20px);
     transition-duration: 0.5s;
   }
-  .entree #b4:active .detail p {
+  .entree #b4:hover .detail p {
     width: calc(100% - 30px);
     transition-duration: 0.5s;
   }
-  .entree #b5:active .detail p {
+  .entree #b5:hover .detail p {
     width: calc(100% - 20px);
     transition-duration: 0.5s;
   }
-  .entree #b9:active .detail p {
+  .entree #b9:hover .detail p {
     width: calc(100% - 20px);
     transition-duration: 0.5s;
   }
-  .entree #b10:active .detail p {
+  .entree #b10:hover .detail p {
     width: calc(100% - 30px);
     transition-duration: 0.5s;
   }
-  .entree #b17:active .detail p {
+  .entree #b17:hover .detail p {
     width: calc(100% - 30px);
     transition-duration: 0.5s;
   }
-  .entree #b23:active .detail p {
+  .entree #b23:hover .detail p {
     width: calc(100% - 20px);
     transition-duration: 0.5s;
   }
-  .entree #b32:active h3 {
+  .entree #b32:hover h3 {
     width: calc(100% - 20px);
     transition-duration: 0.5s;
   }
@@ -739,8 +730,9 @@ footer a {
   .map {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    gap: 2rem;
   }
   .map i {
     width: 138px;

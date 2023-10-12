@@ -440,24 +440,39 @@
     position: absolute;
   }
   .full {
-    background-clip: text;
-    opacity: 0;
-    transition-property: all;
-    transition-duration: 0.5s;
-    &:hover {
-      cursor: pointer;
-      transition: 0.5s ease-in-out;
-      color: transparent;
-      opacity: 1;
-      background-clip: text;
+    // background-clip: text;
+    // opacity: 0;
+    // transition-property: all;
+    // // background-image: none;
+    // transition: background-image 0.5s;
+    &::before {
+      content: "\f004";
       -webkit-background-clip: text;
       -webkit-text-fill-color: rgba(0, 0, 0, 0);
+      background-clip: text;
       background-image: linear-gradient(182deg, #9356dc 0%, #ff79da 100%);
-      &:active {
-        transform: scale(1.8);
-        opacity: 1;
-      }
+      opacity: 0;
+      transition: opacity 1s;
     }
+    &:hover::before {
+      opacity: 1;
+    }
+
+    // &:hover {
+    //   cursor: pointer;
+    //   background-color: transparent;
+    //   opacity: 1;
+    //   background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: rgba(0, 0, 0, 0);
+    //   background-image: linear-gradient(182deg, #9356dc 0%, #ff79da 100%);
+    //   transition: 0.5s ease;
+
+    //   // &:active {
+    //   //   transform: scale(1.8);
+    //   //   opacity: 1;
+    //   // }
+    // }
   }
 }
 
@@ -577,24 +592,24 @@
       }
     }
 
-    &:active {
+    &:hover {
       .slide {
         cursor: pointer;
-        animation: slider 0.2s ease-in-out both;
+        animation: slider 0.4s ease-in-out both;
       }
     }
-    &:active {
+    &:hover {
       .fa-circle-check {
         animation: iconer 0.2s ease-in-out both;
         transition-duration: 0.2s;
       }
     }
-    &:active {
+    &:hover {
       .prix {
         animation: prixer 0.5s cubic-bezier(0.25, 0.1, 0.48, 1) forwards;
       }
     }
-    &:active p {
+    &:hover p {
       width: 100%;
       overflow: hidden;
       white-space: nowrap;

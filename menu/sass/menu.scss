@@ -58,7 +58,7 @@ footer {
 
 @media #{variables.$smaller-down} {
   .entree {
-    #b2:active {
+    #b2:hover {
       .detail p {
         @include defil3_text;
       }
@@ -66,10 +66,10 @@ footer {
         @include defil1_text;
       }
     }
-    #b3:active .detail p {
+    #b3:hover .detail p {
       @include defil3_text;
     }
-    #b4:active {
+    #b4:hover {
       .detail p {
         @include defil3_text;
       }
@@ -77,7 +77,7 @@ footer {
         @include defil1_text;
       }
     }
-    #b5:active {
+    #b5:hover {
       .detail p {
         @include defil3_text;
       }
@@ -85,7 +85,7 @@ footer {
         @include defil1_text;
       }
     }
-    #b8:active {
+    #b8:hover {
       .detail p {
         @include defil3_text;
       }
@@ -93,16 +93,16 @@ footer {
         @include defil1_text;
       }
     }
-    #b9:active .detail p {
+    #b9:hover .detail p {
       @include defil3_text;
     }
-    #b10:active .detail p {
+    #b10:hover .detail p {
       @include defil3_text;
     }
-    #b11:active .detail p {
+    #b11:hover .detail p {
       @include defil3_text;
     }
-    #b12:active {
+    #b12:hover {
       .detail p {
         @include defil3_text;
       }
@@ -110,7 +110,7 @@ footer {
         @include defil1_text;
       }
     }
-    #b13:active {
+    #b13:hover {
       .detail p {
         @include defil3_text;
       }
@@ -118,7 +118,7 @@ footer {
         @include defil1_text;
       }
     }
-    #b14:active {
+    #b14:hover {
       .detail p {
         @include defil3_text;
       }
@@ -126,7 +126,7 @@ footer {
         @include defil1_text;
       }
     }
-    #b16:active {
+    #b16:hover {
       .detail p {
         @include defil3_text;
       }
@@ -134,7 +134,7 @@ footer {
         @include defil1_text;
       }
     }
-    #b17:active {
+    #b17:hover {
       .detail p {
         @include defil3_text;
       }
@@ -142,7 +142,7 @@ footer {
         @include defil1_text;
       }
     }
-    #b18:active {
+    #b18:hover {
       .detail p {
         @include defil3_text;
       }
@@ -150,17 +150,17 @@ footer {
         @include defil1_text;
       }
     }
-    #b19:active {
+    #b19:hover {
       .detail h3 {
         @include defil1_text;
       }
     }
-    #b20:active {
+    #b20:hover {
       .detail h3 {
         @include defil1_text;
       }
     }
-    #b21:active {
+    #b21:hover {
       .detail p {
         @include defil3_text;
       }
@@ -168,7 +168,7 @@ footer {
         @include defil1_text;
       }
     }
-    #b23:active {
+    #b23:hover {
       .detail p {
         @include defil3_text;
       }
@@ -176,25 +176,12 @@ footer {
         @include defil1_text;
       }
     }
-    #b24:active {
+    #b24:hover {
       .detail p {
         @include defil3_text;
       }
     }
-    #b25:active {
-      .detail p {
-        @include defil3_text;
-      }
-      .detail h3 {
-        @include defil1_text;
-      }
-    }
-    #b26:active {
-      .detail h3 {
-        @include defil1_text;
-      }
-    }
-    #b28:active {
+    #b25:hover {
       .detail p {
         @include defil3_text;
       }
@@ -202,7 +189,12 @@ footer {
         @include defil1_text;
       }
     }
-    #b30:active {
+    #b26:hover {
+      .detail h3 {
+        @include defil1_text;
+      }
+    }
+    #b28:hover {
       .detail p {
         @include defil3_text;
       }
@@ -210,12 +202,20 @@ footer {
         @include defil1_text;
       }
     }
-    #b32:active {
+    #b30:hover {
+      .detail p {
+        @include defil3_text;
+      }
       .detail h3 {
         @include defil1_text;
       }
     }
-    #b33:active {
+    #b32:hover {
+      .detail h3 {
+        @include defil1_text;
+      }
+    }
+    #b33:hover {
       .detail p {
         @include defil3_text;
       }
@@ -230,28 +230,28 @@ footer {
     }
   }
   .entree {
-    #b3:active .detail p {
+    #b3:hover .detail p {
       @include defil2_text;
     }
-    #b4:active .detail p {
+    #b4:hover .detail p {
       @include defil1_text;
     }
-    #b5:active .detail p {
+    #b5:hover .detail p {
       @include defil2_text;
     }
-    #b9:active .detail p {
+    #b9:hover .detail p {
       @include defil2_text;
     }
-    #b10:active .detail p {
+    #b10:hover .detail p {
       @include defil1_text;
     }
-    #b17:active .detail p {
+    #b17:hover .detail p {
       @include defil1_text;
     }
-    #b23:active .detail p {
+    #b23:hover .detail p {
       @include defil2_text;
     }
-    #b32:active h3 {
+    #b32:hover h3 {
       @include defil2_text;
     }
   }
@@ -322,8 +322,9 @@ footer {
   .map {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    gap: 2rem;
     i {
       width: 138px;
       order: 5;
